@@ -1,0 +1,12 @@
+[
+  {
+    "question": "JavaScriptで変数を宣言するキーワードはどれですか？",
+    "options": ["var", "let", "const", "以上すべて"],
+    "answer": "以上すべて"
+  },
+  {
+    "question": "Reactでコンポーネントの状態を管理するフックはどれですか？",
+    "options": ["useState", "useEffect", "useContext", "useReducer"],
+    "answer": "useState"
+  }
+]
