@@ -1,7 +1,7 @@
 // app/quiz/result/page.tsx
 "use client";
 
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
@@ -22,7 +22,7 @@ const ResultPage: React.FC = () => {
   const category = searchParams.get("category") || "it";
   const num = parseInt(searchParams.get("num") || "5");
   const answersParam = searchParams.get("answers") || "";
-  // const router = useRouter();
+  const router = useRouter();
 
   const [result, setResult] = useState<Result | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
